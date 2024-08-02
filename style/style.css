@@ -1,0 +1,26 @@
+.section{
+    max-width:500px;
+    margin:200px auto;
+    text-align: center;
+    background-color: rgb(57, 131, 217);
+    padding:5px;
+}
+
+button{
+    padding:5px 10px;
+    color:white;
+    background-color: red;
+}
+
+#start,#lap,#stop{
+    margin-right:20px;
+}
+
+h1{
+    font-size: 70px;
+}
+
+h3{
+    padding:5px;
+    margin:0px 0px 0px 0px;
+}
