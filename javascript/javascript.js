@@ -89,6 +89,6 @@ function stopWatch() {
         document.getElementById('min').innerHTML = min1; 
         document.getElementById('sec').innerHTML = sec1; 
 
-        setTimeout(stopWatch, 5); 
+        setTimeout(stopWatch, 10); 
     } 
 }
