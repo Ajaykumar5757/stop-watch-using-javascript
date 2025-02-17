@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympics Quiz</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="javascript/javascript.js" defer></script>
+</head>
+<body>
+    <div class="section">
+        <h1 class="title">Olympics Quiz</h1>
+        <div class="score">
+            <h2 class="score-1">Your Score: <span id="quiz-score">0/10</h2>
+        </div>
+        <div class="high-score">
+            <h2 id="high-score">High Score: 0/10</h2>
+        </div>
+        <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>       
+        <div class="timer">Time Remaining: <span id="timer">60</span> seconds</div>
+
+        <div class="question">
+            <h2>1. Who won the first individual gold medal in the Olympics?</h2>
+            
+            <input type="radio" id="one-op1" name="ques1" value="one-op1">
+            <label for="one-op1">Vijiendar Singh</label>
+            
+            <input type="radio" id="one-op2" name="ques1" value="one-op2">
+            <label for="one-op2">Abhinav Bindra</label>
+
+            <input type="radio" id="one-op3" name="ques1" value="one-op3">
+            <label for="one-op3">Sakshi Malik</label>
+
+            <input type="radio" id="one-op4" name="ques1" value="one-op4">
+            <label for="one-op4">Neeraj Chopra</label>
+
+            <p id="result-ques1" class="result"></p>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <h2>2. Where was the 2020 Olympics held?</h2>
+
+            <input type="radio" id="two-op1" name="ques2" value="two-op1">
+            <label for="two-op1">Paris</label>
+
+            <input type="radio" id="two-op2" name="ques2" value="two-op2">
+            <label for="two-op2">Rio de Janeiro</label>
+
+            <input type="radio" id="two-op3" name="ques2" value="two-op3">
+            <label for="two-op3">London</label>
+
+            <input type="radio" id="two-op4" name="ques2" value="two-op4">
+            <label for="two-op4">Tokyo</label>
+
+            <p id="result-ques2" class="result"></p>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <h2>3. In which sport has India won 8 Gold medals in the Olympics?</h2>
+
+            <input type="radio" id="three-op1" name="ques3" value="three-op1">
+            <label for="three-op1">Hockey</label>
+
+            <input type="radio" id="three-op2" name="ques3" value="three-op2">
+            <label for="three-op2">Shooting</label>
+
+            <input type="radio" id="three-op3" name="ques3" value="three-op3">
+            <label for="three-op3">Badminton</label>
+
+            <input type="radio" id="three-op4" name="ques3" value="three-op4">
+            <label for="three-op4">Wrestling</label>
+
+            <p id="result-ques3" class="result"></p>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <h2>4. Who won a double medal for India in a single Olympics after 1947?</h2>
+
+            <input type="radio" id="four-op1" name="ques4" value="four-op1">
+            <label for="four-op1">PT Usha</label>
+
+            <input type="radio" id="four-op2" name="ques4" value="four-op2">
+            <label for="four-op2">Harmanpreet Singh</label>
+
+            <input type="radio" id="four-op3" name="ques4" value="four-op3">
+            <label for="four-op3">PV Sindhu</label>
+
+            <input type="radio" id="four-op4" name="ques4" value="four-op4">
+            <label for="four-op4">Manu Bhaker</label>
+
+            <p id="result-ques4" class="result"></p>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <h2>5. In which category did Neeraj Chopra win gold in the Olympics?</h2>
+
+            <input type="radio" id="five-op1" name="ques5" value="five-op1">
+            <label for="five-op1">Long jump</label>
+
+            <input type="radio" id="five-op2" name="ques5" value="five-op2">
+            <label for="five-op2">Javelin throw</label>
+
+            <input type="radio" id="five-op3" name="ques5" value="five-op3">
+            <label for="five-op3">High jump</label>
+
+            <input type="radio" id="five-op4" name="ques5" value="five-op4">
+            <label for="five-op4">Hammer throw</label>
+
+            <p id="result-ques5" class="result"></p>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <h2>6. What do the five rings on the Olympic flag represent?</h2>
+
+            <input type="radio" id="six-op1" name="ques6" value="six-op1">
+            <label for="six-op1">The five continents</label>
+
+            <input type="radio" id="six-op2" name="ques6" value="six-op2">
+            <label for="six-op2">The five countries</label>
+
+            <input type="radio" id="six-op3" name="ques6" value="six-op3">
+            <label for="six-op3">The five rivers</label>
+
+            <input type="radio" id="six-op4" name="ques6" value="six-op4">
+            <label for="six-op4">The five oceans</label>
+
+            <p id="result-ques6" class="result"></p>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <h2>7. In which country did the ancient Olympic Games originate?</h2>
+
+            <input type="radio" id="seven-op1" name="ques7" value="seven-op1">
+            <label for="seven-op1">United States</label>
+
+            <input type="radio" id="seven-op2" name="ques7" value="seven-op2">
+            <label for="seven-op2">China</label>
+
+            <input type="radio" id="seven-op3" name="ques7" value="seven-op3">
+            <label for="seven-op3">Greece</label>
+
+            <input type="radio" id="seven-op4" name="ques7" value="seven-op4">
+            <label for="seven-op4">Russia</label>
+
+            <p id="result-ques7" class="result"></p>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <h2>8. What are the five colors of the Olympic rings?</h2>
+
+            <input type="radio" id="eight-op1" name="ques8" value="eight-op1">
+            <label for="eight-op1">Red, Yellow, Blue, Green, Black</label>
+
+            <input type="radio" id="eight-op2" name="ques8" value="eight-op2">
+            <label for="eight-op2">Red, Yellow, Green, Black, White</label>
+
+            <input type="radio" id="eight-op3" name="ques8" value="eight-op3">
+            <label for="eight-op3">Red, Yellow, Blue, Black, White</label>
+
+            <input type="radio" id="eight-op4" name="ques8" value="eight-op4">
+            <label for="eight-op4">Red, Blue, Green, Black, White</label>
+
+            <p id="result-ques8" class="result"></p>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <h2>9. Which city in Australia is going to host the 2032 Olympics?</h2>
+        
+            <input type="radio" id="nine-op1" name="ques9" value="nine-op1">
+            <label for="nine-op1">Sydney</label>
+        
+            <input type="radio" id="nine-op2" name="ques9" value="nine-op2">
+            <label for="nine-op2">Gold Coast</label>
+        
+            <input type="radio" id="nine-op3" name="ques9" value="nine-op3">
+            <label for="nine-op3">Brisbane</label>
+        
+            <input type="radio" id="nine-op4" name="ques9" value="nine-op4">
+            <label for="nine-op4">Melbourne</label>
+        
+            <p id="result-ques9" class="result"></p>
+        </div>
+        
+        <!-- Question 10 -->
+        <div class="question">
+            <h2>10. Which Badminton player has won a silver and a bronze medal in the Olympics?</h2>
+        
+            <input type="radio" id="ten-op1" name="ques10" value="ten-op1">
+            <label for="ten-op1">Saina Nehwal</label>
+        
+            <input type="radio" id="ten-op2" name="ques10" value="ten-op2">
+            <label for="ten-op2">PV Sindhu</label>
+        
+            <input type="radio" id="ten-op3" name="ques10" value="ten-op3">
+            <label for="ten-op3">Prakash Padukone</label>
+        
+            <input type="radio" id="ten-op4" name="ques10" value="ten-op4">
+            <label for="ten-op4">Kidambi Srikanth</label>
+        
+            <p id="result-ques10" class="result"></p>
+        </div>
+
+        <div class="buttons">
+            <button onclick="checkQuiz()">Submit</button>
+            <button onclick="resetQuiz()">Reset</button>
+        </div>
+    </div>
+</body>
+</html> 
